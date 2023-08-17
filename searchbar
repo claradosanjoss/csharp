@@ -1,0 +1,91 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace elemento
+{
+    public partial class searchbar : Form
+    {
+        public searchbar()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pcb2_MouseHover(object sender, EventArgs e)
+        {
+            pcbimagem.Image = Properties.Resources.dog;
+        }
+
+        private void bt1_Click(object sender, EventArgs e)
+        {
+            pcbimagem.Image = Properties.Resources.carneiro;
+        }
+
+        private void bt2_Click(object sender, EventArgs e)
+        {
+            pcbimagem.Image = Properties.Resources.jaw;
+        }
+
+        private void bt3_Click(object sender, EventArgs e)
+        {
+            pcbimagem.Image = Properties.Resources.gat;
+        }
+
+        private void bt4_Click(object sender, EventArgs e)
+        {
+            pcbimagem.Image = Properties.Resources.dog;
+        }
+
+        private void pcb1_MouseHover(object sender, EventArgs e)
+        {
+            pcbimagem.Image = Properties.Resources.carneiro;
+        }
+
+        private void pcb3_MouseHover(object sender, EventArgs e)
+        {
+            pcbimagem.Image = Properties.Resources.gat;
+        }
+
+        private void pcb4_MouseHover(object sender, EventArgs e)
+        {
+            pcbimagem.Image = Properties.Resources.jaw;
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+                string userInput = txt1.Text.ToLower(); 
+
+                if (userInput == "gato")
+                {
+                    pcbimagem.Image = Properties.Resources.gat; 
+                }
+                else if (userInput == "cachorro")
+                {
+                    pcbimagem.Image = Properties.Resources.dog; 
+                }
+                else if (userInput == "tubarão")
+                {
+                pcbimagem.Image = Properties.Resources.jaw; 
+                }
+                else if (userInput == "carneiro")
+                {
+                pcbimagem.Image = Properties.Resources.carneiro;
+                }
+                else
+                {
+                MessageBox.Show("Não há animal!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }     
+        }
+    }
+}
