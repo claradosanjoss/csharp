@@ -1,0 +1,24 @@
+namespace elemento
+{
+    public partial class atividade : Form
+    {
+        public atividade()
+        {
+            InitializeComponent();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+         
+        private void botao_Click(object sender, EventArgs e)
+        {
+            string nome = txtname.Text;
+            string idade = txtage.Text;
+            string email = txtemail.Text;
+            string escola = txtschool.Text;
+            mostrar.Text = "Nome: " + nome + "\r\nIdade: " + idade + "\r\nEmail: " + email + "\r\nEscola:" + escola;
+        }
+    }
+}
